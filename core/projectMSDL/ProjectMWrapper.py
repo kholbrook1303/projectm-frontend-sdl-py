@@ -183,9 +183,11 @@ class ProjectMWrapper:
                 if texture_path_index > 0:
                     config_key += '.{}'.format(texture_path_index)
 
-                if self.config.projectm.get(config_key, None):
-                    log.info('Adding texture path {} {}'.format(config_key, self.config.projectm.get(config_key)))
-                    self.texture_paths.append(self.config.projectm.get(config_key))
+                texture_path = self.config.projectm.get(config_key, None)
+                if texture_path:
+                    texture_path = texture_path.replace('\\', '/')
+                    log.info('Adding texture path {} {}'.format(config_key, texture_path))
+                    self.texture_paths.append(texture_path)
 
                 else:
                     break
@@ -207,9 +209,11 @@ class ProjectMWrapper:
                 if preset_path_index > 0:
                     config_key += '.{}'.format(preset_path_index)
 
-                if self.config.projectm.get(config_key, None):
-                    log.info('Adding preset path {} {}'.format(config_key, self.config.projectm.get(config_key)))
-                    self.preset_paths.append(self.config.projectm.get(config_key))
+                preset_path = self.config.projectm.get(config_key, None)
+                if preset_path:
+                    preset_path = preset_path.replace('\\', '/')
+                    log.info('Adding preset path {} {}'.format(config_key, preset_path))
+                    self.preset_paths.append(preset_path)
 
                 else:
                     break
