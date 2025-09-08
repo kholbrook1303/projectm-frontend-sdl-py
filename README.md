@@ -6,7 +6,7 @@ The core components of the application will:
 - Handle SDL rendering window
 - Initialize projectM using a custom wrapper
 - Capture SDL audio and route PCM data to projectM
-- Listen for SDL mouse/keyboard/gamepad/window events for user controlled actions and window focus mgmt (if using Raspberry Pi lite OS evdev is used to monitor keyboard/mouse events)
+- Listen for SDL mouse/keyboard/gamepad/window events for user controlled actions and window focus mgmt
 
 ## 🔉 Example Use Cases
 The obvious purpose for this is to have visualizations react to sound.  That said there are various use cases for implementation.
@@ -90,7 +90,7 @@ Handles key presses, with support for modifier keys like **Ctrl**.
 
 ---
 
-## 🎮 Controller Axis Input (Desktop OS only)
+## 🎮 Controller Axis Input
 
 Handles analog stick and trigger inputs. Uses a **deadzone threshold** to avoid accidental movements.
 
@@ -105,7 +105,7 @@ Handles analog stick and trigger inputs. Uses a **deadzone threshold** to avoid 
 
 ---
 
-## 🎮 Controller Button Input (Desktop OS only)
+## 🎮 Controller Button Input
 
 Handles digital controller buttons such as D-Pad and stick clicks.
 
