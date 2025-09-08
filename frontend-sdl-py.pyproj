@@ -40,12 +40,17 @@
     <Content Include="dll\projectM-4.dll" />
     <Content Include="projectMSDL.properties" />
     <Content Include="requirements.txt" />
+    <Content Include="resources\preview1.png" />
+    <Content Include="resources\preview2.png" />
+    <Content Include="resources\preview3.png" />
+    <Content Include="resources\preview4.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="lib\" />
     <Folder Include="dll\" />
     <Folder Include="core\projectMSDL\" />
     <Folder Include="core\" />
+    <Folder Include="resources\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
